@@ -1,0 +1,102 @@
+# ==============================================================================
+# Python & Bytecode
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==============================================================================
+# Virtual Environments
+# ==============================================================================
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+.conda/
+
+# ==============================================================================
+# Jupyter Notebooks
+# ==============================================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ==============================================================================
+# Environment Variables & Secrets
+# ==============================================================================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets.json
+
+# ==============================================================================
+# Machine Learning Models & Large Datasets (Optional)
+# ==============================================================================
+# Serialized models and checkpoints (uncomment to avoid pushing binaries to git)
+# *.joblib
+# *.pkl
+# *.pickle
+# *.h5
+# *.pt
+# *.pth
+# *.onnx
+
+# Raw and processed datasets
+*.tar.gz
+*.zip
+# data/
+
+# ==============================================================================
+# Operating System Files
+# ==============================================================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+
+# ==============================================================================
+# IDEs & Code Editors
+# ==============================================================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
