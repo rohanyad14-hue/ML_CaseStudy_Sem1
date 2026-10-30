@@ -19,12 +19,16 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 
-# Optional canvas drawing support
+# Optional canvas drawing support (supports streamlit-drawable-canvas-fix or streamlit-drawable-canvas)
 try:
     from streamlit_drawable_canvas import st_canvas
     CANVAS_AVAILABLE = True
 except ImportError:
-    CANVAS_AVAILABLE = False
+    try:
+        from streamlit_drawable_canvas_fix import st_canvas
+        CANVAS_AVAILABLE = True
+    except ImportError:
+        CANVAS_AVAILABLE = False
 
 # Page Configuration
 st.set_page_config(
@@ -369,7 +373,7 @@ with tab1:
                     else:
                         st.caption("Canvas is empty. Draw a number.")
             else:
-                st.warning("`streamlit-drawable-canvas` is not active. Please use 'Upload Image' or 'Preset Samples'.")
+                st.warning("`streamlit-drawable-canvas-fix` is not active. Please use 'Upload Image' or 'Preset Samples'.")
                 
         elif input_mode == "🎯 Preset Test Samples":
             st.caption("Select a validated test set digit:")
